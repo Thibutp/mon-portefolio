@@ -1,0 +1,529 @@
+/* style.css */
+
+/* Réinitialisation et base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+  }
+  .logo h1 {
+    color: #1e90ff; /* ou utilisez une autre valeur comme #0000FF pour un bleu spécifique */
+    
+  }
+
+  
+  a {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Header et Navigation */
+  header {
+    height: 100vh;
+    background: #1f1f1f;
+    padding: 20px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+
+  nav .logo h1 {
+    font-size: 2.5rem; /* Ajuste cette valeur selon tes préférences */
+}
+
+/* Agrandir les liens du menu */
+nav .nav-links li a {
+    font-size: 1.5rem; /* Par exemple, 1.5rem ou toute autre valeur */
+}
+
+
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  /* Section Héros */
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+  }
+  .hero-text h1 {
+    font-size: 4.5rem;           /* Ajuste selon tes goûts */
+  margin-right: 0.5rem;
+}
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-text .btn {
+    display: inline-block;       
+    padding: 1em 2em; 
+    background: #1e90ff;         /* Couleur de fond (exemple) */
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+    font-size: 1.2rem;   /* Agrandit le texte du bouton */
+    
+  }
+  .hero-text .btn:hover {
+    background: #1c86ee;         /* Couleur au survol (exemple) */
+  }
+
+
+
+  .about-hobbies-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  
+  .hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hobby-gif {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+  
+  .about-ue-box-title {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+
+
+  
+  
+  /* Sections Générales */
+  .section {
+    padding: 60px 0;
+  }
+  
+  /* Compétences */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .skill {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  /* Formulaire de contact */
+  form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #1f1f1f;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 60px 0;
+    margin-top: 200px; /* Ajuste cette valeur pour déplacer la section plus bas */
+  }
+  
+  
+  .hero-text {
+    max-width: 500px;            /* Largeur max pour éviter que le texte ne s’étale trop */
+    margin-right: 1rem;
+    flex: 1;                     /* Fait occuper la place nécessaire au texte */
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;           /* Ajuste la taille du texte */
+    margin-bottom: 1em;          /* Espace sous le paragraphe */
+  }
+
+  
+
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column; /* Sur mobile, empile les éléments en colonne */
+      align-items: center;    /* Centre les éléments horizontalement */
+    }
+    
+    .hero-animation {
+      /* tu peux limiter la largeur/hauteur ou jouer avec les marges */
+      max-width: 600px; 
+      margin-left: 1rem; 
+      flex: 1;
+    }
+  }
+
+
+  
+.accueil-section {
+  display: flex;                 /* Active le mode flex */
+  align-items: center;           /* Centre verticalement */
+  justify-content: space-between;/* Sépare le texte et l’image */
+  gap: 20px;                     /* Espace horizontal entre les deux blocs */
+}
+
+.accueil-text {
+  flex: 1;                       /* Le texte occupe tout l'espace disponible */
+}
+
+.accueil-image img {
+  max-width: 400px;             /* Limite la largeur de l'image */
+  width: 100%;                  /* S’adapte au conteneur */
+  height: auto;                 /* Conserve les proportions */
+}
+
+
+
+
+.accueil-text .read-more {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+  color: #fff;
+  text-decoration: none;
+
+  /* Supprimez la bordure double et changez la couleur de fond */
+  border: none; /* ou 1px solid transparent si vous préférez une bordure fine */
+  background: #1e90ff; /* Couleur de fond bleue */
+
+  /* Ajustez l’arrondi des bords si vous voulez plus ou moins de courbure */
+  border-radius: 6px;
+
+  /* Police */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.specialite {
+  display: inline-flex;      /* ou display: flex; si vous préférez */
+  align-items: center;       /* Centre verticalement l’icône et le texte */
+  gap: 8px;                  /* Espace entre l'image et le texte */
+}
+
+/*.skills-row {
+  display: flex;      
+  gap: 20px;          
+  overflow-x: auto;    
+  padding: 10px 0;     
+  scroll-behavior: smooth; 
+}
+
+
+
+.skill-logo {
+  width: 200px;        
+  height: 200px;      
+  object-fit: contain;
+}
+
+.skills-row::-webkit-scrollbar {
+  height: 8px;              
+}
+.skills-row::-webkit-scrollbar-thumb {
+  background-color: #ccc;    
+  border-radius: 4px;        
+}
+.skills-row::-webkit-scrollbar-track {
+  background: #f1f1f1;       
+}*/
+
+.skill-logo {
+  width: 120px;       /* Ajustez selon vos besoins */
+  height: auto; 
+  object-fit: contain;
+}
+
+.swiper-container {
+  width: 80%;
+  margin: 2rem auto;
+  position: relative;
+  overflow: hidden;
+   /* ou visible, selon l’effet désiré */
+}
+
+/* Force les flèches à être au-dessus */
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 2rem;     /* Taille de l’icône */
+  z-index: 10;         /* Pour qu’elles passent au-dessus des slides */
+}
+
+/* Flèche gauche */
+.swiper-button-prev {
+  left: -90rem ;  /* Valeur négative pour la sortir du conteneur */
+}
+
+/* Flèche droite */
+.swiper-button-next {
+  right: -3rem; /* Idem, en sens inverse */
+}
+
+/* Section globale */
+.timeline-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Titre et description */
+.timeline-section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.timeline-section p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Conteneur principal de la timeline */
+.timeline {
+  position: relative; 
+  /* On place une ligne verticale via un pseudo-élément */
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #555;
+  top: 0;
+  bottom: 0;
+  left: 50%;          /* La ligne est centrée */
+  margin-left: -3px;  /* Pour centrer une ligne de 6px */
+  z-index: 1;         /* Moins que la pastille pour que la pastille soit par-dessus */
+}
+
+/* Conteneur de chaque étape */
+.timeline-container {
+  width: 50%;
+  padding: 20px;
+  position: relative;
+}
+
+/* Étapes à gauche */
+.timeline-container.timeline-left {
+  left: 0;
+}
+
+/* Étapes à droite */
+.timeline-container.timeline-right {
+  left: 50%;
+}
+
+/* Contenu de chaque étape */
+.timeline-content {
+  background-color: #1f1f1f; /* Couleur de fond (adaptée à ton thème sombre) */
+  color: #e0e0e0;            /* Couleur du texte */
+  padding: 20px;
+  border-radius: 6px;
+  position: relative;
+}
+
+/* Petite pastille sur la ligne centrale */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px; /* pour la partie gauche */
+  background-color: #1e90ff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  top: 20px;
+  z-index: 2; /* Assure que le rond soit au-dessus de la ligne */
+}
+
+
+.timeline-container.timeline-left::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #1e90ff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  top: 20px; /* Ajustez cette valeur si besoin */
+  right: -10px;  /* Pour que le centre (10px) soit sur la ligne centrale */
+  z-index: 2;
+}
+
+/* Ajuste la pastille pour les blocs à droite */
+.timeline-container.timeline-right::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #1e90ff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  top: 20px;
+  left: -10px;   /* Pour que le centre soit sur la ligne centrale */
+  z-index: 2;
+}
+
+
+/* Dates dans chaque étape */
+.timeline-date {
+  font-size: 0.9rem;
+  color: #aaa;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE : sur mobile, tout en colonne */
+@media (max-width: 768px) {
+  .timeline::after {
+    left: 20px;  /* la ligne se décale à gauche */
+  }
+  .timeline-container {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+  }
+  .timeline-container::before {
+    left: 0;    /* on place la pastille sur la ligne à gauche */
+  }
+  .timeline-container.left, 
+  .timeline-container.right {
+    left: 0;    /* plus d’alternance */
+  }
+}
+
+
+.faq-list {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Chaque item de la FAQ */
+.faq-item {
+  border-bottom: 1px solid #333;
+  padding: 10px 0;
+}
+
+/* En-tête de chaque item */
+.faq-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Titre de la FAQ */
+.faq-header h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  flex: 1;
+}
+
+/* Bouton toggle (flèche) */
+.faq-toggle {
+  background: none;
+  border: none;
+  color: #1e90ff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Par défaut, le contenu est masqué */
+.faq-content {
+  display: none;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Quand l'item est ouvert, afficher le contenu */
+.faq-item.open .faq-content {
+  display: block;
+}
+
+/* Rotation de la flèche quand l'item est ouvert */
+.faq-item.open .faq-toggle .arrow {
+  transform: rotate(180deg);
+}
+section {
+  margin-bottom: 50px;
+}
+#accueil {
+  height: 100vh;
+}

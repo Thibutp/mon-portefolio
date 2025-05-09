@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Thibut Philipkumar</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ 
+
+</head>
+<body>
+  <header>
+    <section id="accueil" class="section">
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <h1>Thibut Philipkumar</h1>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#about">Formation</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+  
+      <div class="hero-section">
+        <div class="hero-text">
+          <!-- Enlève les <br> et laisse juste h1 + p + bouton -->
+          <h1>Bienvenue sur mon portfolio</h1>
+          <p>Découvrez mon parcours et mes compétences</p>
+          <a href="#accueil" class="btn">Découvrir...</a>
+        </div>
+        
+        <div class="hero-animation">
+          <lottie-player 
+            src="images/animation.json"
+            speed="1"
+            style="width: 500px; height: 500px;"
+            loop
+            autoplay>
+          </lottie-player>
+        </div>
+      </div>
+    </section>
+  </header>
+  
+  <section id="apropos" class="section">
+    <div class="container accueil-section">
+      <div class="accueil-text">
+        <h2>QUI SUIS-JE ?..</h2>
+        <br>
+        <p>
+          Je suis Thibut Philipkumar, apprenant en BTS SIO (Services Informatiques aux Organisations) 
+          à Nevers, dans la spécialité SLAM (Solutions Logicielles et Applications Métiers).<br><br>
+          Toujours en cours d'étude, à l'issue de mon BTS j'envisage de continuer par une année de Licence en Développement.<br><br>
+          En attendant, je vous invite à découvrir ce portfolio qui présente une sélection de mes réalisations académiques, 
+          de mes compétences et de mon parcours. J'ai le plaisir de partager avec vous mes projets, mon implication dans 
+          le domaine de l'informatique, ainsi que mes compétences en développement et mon cheminement académique.
+        </p><br>
+
+        <h3>Retrouvez mon CV ci dessous</h3><br>
+        <a href="#/" id="cv" class="read-more" target="_blank">CV<i class="bi bi-long-arrow-right"></i></a>
+        <a href="#/" id="lettre-motivation" class="read-more" target="_blank">Lettre de Motivation<i class="bi bi-long-arrow-right"></i></a> 
+
+
+       
+        <h3>Centres d'intérêt</h3>
+
+        <div class="about-hobbies-section">
+          <!-- Bloc n°1 -->
+          <div class="hobby">
+            <img src="images/code.gif" alt="Coder" class="hobby-gif">
+            <div class="about-ue-box-title">Coder</div>
+          </div>
+        
+          <!-- Bloc n°2 -->
+          <div class="hobby">
+            <img src="images/sport.gif" alt="Sport" class="hobby-gif">
+            <div class="about-ue-box-title">Sport</div>
+          </div>
+        
+          <!-- Bloc n°3 -->
+          <div class="hobby">
+            <img src="images/jeux.gif" alt="Lire" class="hobby-gif">
+            <div class="about-ue-box-title">Jouer</div>
+          </div>
+        
+          <!-- Bloc n°4 -->
+          <div class="hobby">
+            <img src="images/travel.gif" alt="Voyager" class="hobby-gif">
+            <div class="about-ue-box-title">Voyager</div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="accueil-image">
+        <lottie-player
+        src="images/anim2.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px;"
+        loop
+        autoplay>
+      </lottie-player>
+      </div>
+    </div>
+  </section>
+  
+  <section id="about" class="about-bts-sio">
+    <div class="container">
+      <div class="section-header">
+        <h2>Qu'est ce que le BTS SIO ?</h2><br>
+        <span> Je vous présente la formation que j'ai suivie et évolué durant deux ans. </span>
+        <p>
+          Le Brevet de Technicien Supérieur en Services Informatiques aux Organisations (BTS SIO) est une formation de
+          niveau Bac+2 destinée à ceux qui souhaitent se spécialiser, en deux ans, dans les métiers d'administrateur
+          réseau ou de développeur.
+
+          Cette formation peut être suivie soit en alternance, d'une durée de 12 à 24 mois, soit en initial, avec un
+          minimum de 10 semaines de stage en entreprise, réparties sur une période de 2 à 3 mois, afin de se
+          confronter aux réalités du monde professionnel.
+        </p><br>
+        <h3>Elle propose deux spécialités :</h3><br>
+      </div>
+      <div class="about-study-bts-sio">
+        <div class="about-col_bts_slam">
+          <h4 class="specialite">
+            <img src="images/logo_code.png" alt="Code Logo" width="30px">
+            Spécialité SLAM
+          </h4>
+          <br> 
+
+          <p>
+            Cette spécialité vous formera à développer des compétences en
+            développement d'applications et de logiciels, à concevoir des
+            bases de données, programmer dans divers langages, tester et
+            déployer des solutions logicielles.
+          </p>
+          <br>
+          <p>
+            Voici une liste de quelque'uns des métiers principaux
+            accessibles après l’obtention de ce diplôme (SLAM) :
+          </p>
+          <ul>
+            <li>Analyste-programmeur</li>
+            <li>Développeur / Développeuse d’applications mobile</li>
+            <li>Technicien / Technicienne informatique</li>
+            <li>Développeur / Développeuse web</li>
+            <li>Intégrateur web</li>
+          </ul>
+        </div>
+        <div class="about-col_bts_sisr">
+          <br>
+          <h4 class="specialite">
+            <img src="images/logo_reseaux.png" alt="Code Logo" width="30px">
+            Spécialité SISR
+          </h4>
+          <br> 
+          <p>
+            Cette spécialité vous formera sur la gestion, la maintenance des
+            infrastructures réseau. Vous apprendrez à gérer des systèmes
+            d'exploitation, des services réseaux, mais aussi à sécuriser une
+            infrastructure et à proposer des solutions pour optimiser la
+            performance d'un réseau.
+          </p>
+          <br>
+          <p>
+            Voici une liste de quelque'uns des métiers principaux
+            accessibles après l’obtention de ce diplôme (SISR) :
+          </p>
+          <ul>
+            <li>Administrateur systèmes et réseaux</li>
+            <li>Technicien / Technicienne support</li>
+            <li>Technicien / Technicienne réseau</li>
+            <li>Gestionnaire d’infrastructures informatiques</li>
+            <li>Responsable sécurité des systèmes d’information junior</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="timeline-section">
+    <h2>Mon Parcours</h2>
+    <p>Voici les grandes étapes de mon parcours scolaire :</p>
+  
+    <div class="timeline">
+      <!-- Étape 1 : Brevet des Collèges (à gauche) -->
+      <div class="timeline-container timeline-left">
+        <div class="timeline-content">
+          <h3>Brevet des Collèges</h3>
+          <span class="timeline-date">2018</span>
+          <p>Obtenu au Collège XYZ (Ville).</p>
+        </div>
+      </div>
+  
+      <!-- Étape 2 : Bac Général (à droite) -->
+      <div class="timeline-container timeline-right">
+        <div class="timeline-content">
+          <h3>Bac Général (Math, NSI)</h3>
+          <span class="timeline-date">2021</span>
+          <p>Baccalauréat Général avec spécialités Mathématiques et NSI.</p>
+        </div>
+      </div>
+  
+      <!-- Étape 3 : BTS SIO (à gauche) -->
+      <div class="timeline-container timeline-left">
+        <div class="timeline-content">
+          <h3>BTS SIO</h3>
+          <span class="timeline-date">2023</span>
+          <p>Spécialité SLAM, Lycée / CFA ... (Ville).</p>
+        </div>
+      </div>
+  
+      <!-- Étape 4 : TO BE CONTINUED (à droite) -->
+      <div class="timeline-container timeline-right">
+        <div class="timeline-content">
+          <h3>TO BE CONTINUED…</h3>
+          <p>La suite de mon parcours est en cours de construction !</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="skills-section">
+    <div class="container">
+    <!-- Carrousel pour les LANGAGES -->
+    <h3>Langages</h3>
+    <br>
+    <div class="swiper-container langages">
+      <div class="swiper-wrapper">
+        <!-- Chaque logo dans un <div class="swiper-slide"> -->
+        <div class="swiper-slide">
+          <img src="images/html.png" alt="HTML" class="skill-logo">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/css.png" alt="CSS" class="skill-logo">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/java.png" alt="Java" class="skill-logo">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/python.png" alt="Python" class="skill-logo">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/kotlin.png" alt="Kotlin" class="skill-logo">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/Php.png" alt="PHP" class="skill-logo">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/csharp.png" alt="C#" class="skill-logo">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/sql.png" alt="SQL" class="skill-logo">
+        </div>
+      </div>
+      <!-- Flèches de navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  
+    <!-- Carrousel pour les LOGICIELS -->
+    <br>
+    <h3>Logiciels</h3>
+    <br>
+    <div class="swiper-container logiciels">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/vscode.png" alt="VS Code" class="skill-logo">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/laragon.png" alt="Laragon" class="skill-logo">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/burpsuite.png" alt="BurpSuite" class="skill-logo">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/android-studio.png" alt="Android Studio" class="skill-logo">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/vscode2022.png" alt="VS Code 2022" class="skill-logo">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/oracle.png" alt="Oracle" class="skill-logo">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/ppp.png" alt="phpMyAdmin" class="skill-logo">
+        </div>
+      </div>
+      <!-- Flèches de navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  </section>
+   
+  
+
+  <section id="veille" class="faq">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Veille Technologique</h2>
+      </div>
+  
+      <div class="faq-list">
+        <!-- Accordéon item 1 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <i class="bx bx-help-circle icon-help"></i>
+            <h3>Qu'est-ce que la veille technologique ?</h3>
+            <button class="faq-toggle" aria-label="Afficher plus">
+              <span class="arrow">▼</span>
+            </button>
+          </div>
+          <div class="faq-content">
+            <p class="description">
+              La veille technologique consiste à surveiller les évolutions techniques et les innovations dans un secteur donné afin de récolter les informations les plus pertinentes et récentes pour anticiper les changements.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Accordéon item 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <i class="bx bx-help-circle icon-help"></i>
+            <h3>Qu'est-ce que le but d'une veille technologique ?</h3>
+            <button class="faq-toggle" aria-label="Afficher plus">
+              <span class="arrow">▼</span>
+            </button>
+          </div>
+          <div class="faq-content">
+            <p class="description">
+              L'objectif est de suivre les évolutions techniques, d'être informé des innovations, de diminuer les coûts de production et d'augmenter nos compétences en anticipant les changements.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Accordéon item 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <i class="bx bx-help-circle icon-help"></i>
+            <h3>Quels outils pour ma veille ?</h3>
+            <button class="faq-toggle" aria-label="Afficher plus">
+              <span class="arrow">▼</span>
+            </button>
+          </div>
+          <div class="faq-content">
+            <span class="header-infos">
+              Pour veiller aux dernières tendances de la réalité virtuelle, j'ai utilisé :
+            </span>
+            <ul>
+              <li><strong>Google Actualités & Alerte</strong> : Un outil simple pour rester informé des dernières technologies.</li>
+              <li><strong>Feedly</strong> : Un agrégateur de flux RSS très complet.</li>
+              <li><strong>Twitter</strong> : Une mine d'informations pour suivre les innovations.</li>
+              <li><strong>Youtube</strong> : Pour visionner les dernières actualités en vidéo.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Accordéon item 4 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <i class="bx bx-help-circle icon-help"></i>
+            <h3>Quelle a été le sujet de ma veille technologique ?</h3>
+            <button class="faq-toggle" aria-label="Afficher plus">
+              <span class="arrow">▼</span>
+            </button>
+          </div>
+          <div class="faq-content">
+            <span class="header-infos">
+              J'ai choisi d'aborder le thème de la 5G SA, une technologie en perpétuelle évolution utilisée dans de nombreux domaines.
+            </span>
+            <h5>Principal problématique :</h5>
+            <h6>Quel futur de la 5G SA faut-il espérer ?</h6>
+            <p class="description">
+              Nous allons répondre à cette problématique en distinguant trois thématiques : 
+            </p>
+            <ul>
+              <li><strong>Théme 1</strong> : Qu'est-ce que la 5G SA ?</li>
+              <li><strong>Thème 2</strong> : Comment fonctionne la 5G SA ?</li>
+              <li><strong>Thème 3</strong> : Quelle est la différence entre la 5G SA et la 5G Normale ?</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Accordéon item 5 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <i class="bx bx-help-circle icon-help"></i>
+            <h3>Quelles sont les différentes thématiques abordées ?</h3>
+            <button class="faq-toggle" aria-label="Afficher plus">
+              <span class="arrow">▼</span>
+            </button>
+          </div>
+          <div class="faq-content">
+            <h4>"Qu'est-ce que la 5G SA ?"</h4>
+            <div class="blog-meta">
+              <p><i class="bx bx-news"></i> Aurélie</p>
+              <p><i class="bx bxs-calendar"></i> 21-09-2024</p>
+            </div>
+            <h5>Définition :</h5>
+            <p class="description">
+              La 5G SA (Stand-Alone) est une version de la 5G fonctionnant de manière indépendante, offrant des vitesses plus rapides, une latence réduite et une meilleure gestion des données.
+            </p>
+            <a class="btn" href="https://www.edcom.fr/actualites/comment-profiter-de-la-5g-sa-de-free" target="_blank">Article <i class="bx bx-link-external"></i></a>
+            <hr>
+            <a class="btn" href="/autres/veille" target="_blank">
+              Ma veille technologique en détail <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Pour toute demande, n'hésitez pas à me contacter via le formulaire ci-dessous.</p>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Votre email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Votre message"></textarea>
+        </div>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Thibut Philipkumar. Tous droits réservés.</p>
+    </div>
+  </footer>
+   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+   <script>
+  // Sélectionne tous les carrousels de la page (ici, .swiper-container)
+  const allCarousels = document.querySelectorAll('.swiper-container');
+
+  allCarousels.forEach((carousel) => {
+    new Swiper(carousel, {
+      loop: true,             // Rend le défilement infini
+      slidesPerView: 5,       // Nombre de logos visibles en même temps
+      spaceBetween: 10,       // Espace (en px) entre les slides
+
+      // Flèches de navigation
+      navigation: {
+        nextEl: carousel.querySelector('.swiper-button-next'),
+        prevEl: carousel.querySelector('.swiper-button-prev'),
+      },
+
+      // Lecture automatique (optionnel)
+      //autoplay: {
+        //delay: 2000,          // Temps (ms) entre deux slides
+        //disableOnInteraction: false,
+      //},
+
+      // Vitesse de transition
+      speed: 300,             // Durée (ms) de la transition
+
+      // (Optionnel) Responsiveness
+      // breakpoints: {
+      //   768: {
+      //     slidesPerView: 3,
+      //   },
+      //   480: {
+      //     slidesPerView: 2,
+      //   },
+      // },
+    });
+  });
+</script>
+<script>
+  // Sélectionne tous les boutons de toggle de la FAQ
+  const faqToggles = document.querySelectorAll('.faq-toggle');
+
+  faqToggles.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      // Trouve l'item parent de ce bouton
+      const faqItem = toggle.closest('.faq-item');
+      faqItem.classList.toggle('open');
+    });
+  });
+</script>
+
+
+</body>
+</html>
