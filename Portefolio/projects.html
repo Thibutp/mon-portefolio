@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mes Projets</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Test Sticky Navbar</title>
+  <style>
+    #navbar-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: #303030;
+  padding: 20px;
+  transition: background .3s, padding .3s;
+  z-index: 100;
+}
+
+#navbar-container.scrolled {
+  background: #303030;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Uniquement les liens de la navbar */
+#navbar-container nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* espace entre les liens */
+}
+
+#navbar-container nav a {
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+  <!-- Navbar et container déjà existants -->
+  <header class="navbar-only">
+  <div class="navbar-container" id="navbar-container">
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Thibut Philipkumar</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="index.html#about">Formation</a></li>
+        <li><a href="index.html#parcours">Parcours</a></li>
+        <li><a href="index.html#competence">Compétences</a></li>
+        <li><a href="index.html#veille">Veille</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        
+        <li><a href="stages.html">Stages</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+ <main class="container section" id="projects">
+  <h2>Mes Projets Réalisé En Formation</h2>
+  <br><br>
+
+  <!-- Grille des deux premiers projets -->
+  <div class="projects-grid">
+    <article class="project-item">
+      <a href="projet1.html">
+        <img src="images/gsbbB.png" alt="Aperçu du projet GSB">
+        <h3>En savoir plus</h3>
+      </a>
+    </article>
+
+    <article class="project-item">
+      <a href="projet2.html">
+        <img src="images/icgo.webp" alt="Aperçu du projet ICGO">
+        <h3>En savoir plus</h3>
+      </a>
+    </article>
+  </div>
+
+  <!-- Projet 3 centré en dessous -->
+  <div class="project-single-centered">
+    <article class="project-item">
+      <a href="projet3.html">
+        <img src="images/MAUI.png" alt="Aperçu du projet 3">
+        <h3>En savoir plus</h3>
+      </a>
+    </article>
+  </div>
+</main>
+  <footer><div class="container">
+      <p>&copy; 2025 Thibut Philipkumar. Tous droits réservés.</p>
+    </div></footer>
+</body>
+</html>

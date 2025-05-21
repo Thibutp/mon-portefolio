@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>GSB</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Test Sticky Navbar</title>
+  <style>
+    #navbar-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: #303030;
+  padding: 20px;
+  transition: background .3s, padding .3s;
+  z-index: 100;
+}
+
+#navbar-container.scrolled {
+  background: #303030;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Uniquement les liens de la navbar */
+#navbar-container nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* espace entre les liens */
+}
+
+#navbar-container nav a {
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+  <!-- Navbar et container déjà existants -->
+  <header class="navbar-only">
+  <div class="navbar-container" id="navbar-container">
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Thibut Philipkumar</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="index.html#about">Formation</a></li>
+        <li><a href="index.html#parcours">Parcours</a></li>
+        <li><a href="index.html#competence">Compétences</a></li>
+        <li><a href="index.html#veille">Veille</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        
+        <li><a href="stages.html">Stages</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="container section" id="projects">
+  <h2>Projets ICGO</h2>
+  <br><br>
+  <!-- Projet 3 centré en dessous -->
+  <div class="project-single-centered">
+    <article class="project-item">
+        <img src="images/icgo.webp" alt="Aperçu du projet 3">
+      </a>
+    </article>
+  </div>
+</main>
+
+<section id="apropos" class="section">
+    <div class="container accueil-section">
+      <div class="accueil-text">
+        <h2>CONTEXTE</h2>
+        <br>
+        <p>
+          L’institut Claude Gaston Octave (I-CGO) est un organisme de formation situé à Dijon assurant des stages de formation en
+informatique pour des entreprises clientes et pour des particuliers. L’I-CGO est dirigé par ses trois cofondateurs, Messieurs
+Claude, Gaston et Octave. Ainsi l’entreprise aimerait se développer et apporter un service dans différente région
+        </p><br>
+
+        <h2>Réalisations</h2><br>
+        <p>
+          ICGO est une structure spécialisée dans l’organisation et la gestion de formations (stages groupés ou
+étalés) couvrant les compétences, modules, formateurs, stagiaires et agences . Pour répondre à ce
+besoin, nous avons développé une application ICGO en C# et en POO(programmation orienté objet
+dotée d’une architecture multicouche : Couche Métier (classes représentant purement les entités ),
+Couche d’Accès aux Données (une classe Passerelle qui permet la connexion à la base de données et
+gère les opérations CRUD en BD), Couche Manager (alimente les objets de la couche métier à partir
+de la classe passerelle), et Couche de Présentation ( IHM WinForms ). En partant d’un existant, il nous
+fallait implémenter les classes Module, Session et Inscription avec leurs DAO, et compléter les IHM
+associées pour gérer ces nouvelles entités .
+        </p>
+
+        <main class="container section" id="projects">
+        <h2>Aperçu de l'application</h2>
+        <br><br>
+
+        <!-- Grille des deux premiers projets -->
+        <div class="projects-grid">
+          <article class="project-item">
+  <img src="images/Archi1.png" 
+     alt="Aperçu du projet ICGO" 
+     onclick="openLightbox('images/Archi1_1.png')">
+  <h3>Architecture</h3>
+</article>
+
+
+          <article class="project-item">
+              <img src="images/Bdd icgo.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/bdd icgoHD.png')">
+              <h3>Schéma modèle physique de la base de données</h3>
+            </a>
+          </article>
+        </div>
+
+        
+        </main>
+
+        <div class="project-single-centered">
+        <article class="project-item">
+          
+            <img src="images/PlanningICGO.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/PlanningICGO.png')">
+            <h3>Diagramme de Gant</h3>
+          </a>
+        </article>
+      </div>
+
+
+       
+      
+        <br>
+
+        <main class="container section" id="projects">
+        
+        <br><br>
+
+        <!-- Grille des deux premiers projets -->
+        <div class="projects-grid">
+          <article class="project-item">
+               <img src="images/COICGO.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/COICGO_1.png')">
+              <h3>Page de connexion</h3>
+            </a>
+          </article>
+
+          <article class="project-item">
+               <img src="images/forma.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/forma_1.png')">
+              <h3>Page de gestion de Formation</h3>
+            </a>
+          </article>
+        </div>
+
+        <!-- Projet 3 centré en dessous -->
+      <div class="project-single-centered">
+        <article class="project-item">
+          
+             <img src="images/module.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/module_1.png')">
+            <h3>Page de gestion de Module</h3>
+          </a>
+        </article>
+      </div>
+        </main>
+
+
+      </div>
+    </div>
+  </section>
+
+<footer><div class="container">
+      <p>&copy; 2025 Thibut Philipkumar. Tous droits réservés.</p>
+    </div></footer>
+
+    <!-- Lightbox (image zoomée) -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Zoom">
+</div>
+<script>
+  // Fonction pour ouvrir la lightbox
+  function openLightbox(src) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    
+    // Met à jour la source de l’image
+    lightboxImg.src = src;
+
+    // Supprime et ré-applique l’animation pour qu’elle rejoue à chaque ouverture
+    lightboxImg.classList.remove("zoom");
+    void lightboxImg.offsetWidth; // force le reflow
+    lightboxImg.classList.add("zoom");
+
+    // Affiche la lightbox
+    lightbox.style.display = "flex";
+  }
+
+  // Fonction pour fermer la lightbox
+  function closeLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  lightbox.style.display = "none";
+  lightboxImg.classList.remove("zoom"); // Nettoyage animation
+}
+
+</script>
+
+
+</body>
+</html

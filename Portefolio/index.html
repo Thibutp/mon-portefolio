@@ -10,33 +10,68 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <title>Test Sticky Navbar</title>
+  <style>
+    #navbar-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: transparent;
+  padding: 20px;
+  transition: background .3s, padding .3s;
+  z-index: 100;
+}
+
+#navbar-container.scrolled {
+  background: #303030;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Uniquement les liens de la navbar */
+#navbar-container nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* espace entre les liens */
+}
+
+#navbar-container nav a {
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold;
+}
+  </style>
  
 
 </head>
 <body>
-  <header>
+  <header class="hero-header">
     <section id="accueil" class="section">
-      <div class="container">
-        <nav>
-          <div class="logo">
-            <h1>Thibut Philipkumar</h1>
-          </div>
-          <ul class="nav-links">
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#parcours">Parcours</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#about">Formation</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+    <div class="navbar-container" id="navbar-container">
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Thibut Philipkumar</h1>
       </div>
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#about">Formation</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#competence">Compétences</a></li>
+        <li><a href="#veille">Veille</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="stages.html">Stages</a></li>
+      </ul>
+    </nav>
+  </div>
   
       <div class="hero-section">
         <div class="hero-text">
           <!-- Enlève les <br> et laisse juste h1 + p + bouton -->
           <h1>Bienvenue sur mon portfolio</h1>
           <p>Découvrez mon parcours et mes compétences</p>
-          <a href="#accueil" class="btn">Découvrir...</a>
+          <a href="#apropos" class="btn">Découvrir...</a>
         </div>
         
         <div class="hero-animation">
@@ -68,7 +103,7 @@
 
         <h3>Retrouvez mon CV ci dessous</h3><br>
         <a href="#/" id="cv" class="read-more" target="_blank">CV<i class="bi bi-long-arrow-right"></i></a>
-        <a href="#/" id="lettre-motivation" class="read-more" target="_blank">Lettre de Motivation<i class="bi bi-long-arrow-right"></i></a> 
+        
 
 
        
@@ -187,7 +222,7 @@
       </div>
     </div>
   </section>
-  <section class="timeline-section">
+  <section id="parcours" class="timeline-section">
     <h2>Mon Parcours</h2>
     <p>Voici les grandes étapes de mon parcours scolaire :</p>
   
@@ -197,7 +232,7 @@
         <div class="timeline-content">
           <h3>Brevet des Collèges</h3>
           <span class="timeline-date">2018</span>
-          <p>Obtenu au Collège XYZ (Ville).</p>
+          <p>Obtenu au Collège Claude Debussy (Villeneuve).</p>
         </div>
       </div>
   
@@ -215,7 +250,7 @@
         <div class="timeline-content">
           <h3>BTS SIO</h3>
           <span class="timeline-date">2023</span>
-          <p>Spécialité SLAM, Lycée / CFA ... (Ville).</p>
+          <p>Spécialité SLAM, Lycée Raoul Follereau (Nevers).</p>
         </div>
       </div>
   
@@ -223,6 +258,7 @@
       <div class="timeline-container timeline-right">
         <div class="timeline-content">
           <h3>TO BE CONTINUED…</h3>
+          <span class="timeline-date">2025</span>
           <p>La suite de mon parcours est en cours de construction !</p>
         </div>
       </div>
@@ -230,7 +266,7 @@
   </section>
   
   
-  <section class="skills-section">
+  <section id = "competence" class="skills-section">
     <div class="container">
     <!-- Carrousel pour les LANGAGES -->
     <h3>Langages</h3>
@@ -358,12 +394,19 @@
               Pour veiller aux dernières tendances de la réalité virtuelle, j'ai utilisé :
             </span>
             <ul>
-              <li><strong>Google Actualités & Alerte</strong> : Un outil simple pour rester informé des dernières technologies.</li>
-              <li><strong>Feedly</strong> : Un agrégateur de flux RSS très complet.</li>
-              <li><strong>Twitter</strong> : Une mine d'informations pour suivre les innovations.</li>
+              <li><strong>Google Alerte</strong> : Un outil simple qui permet de recevoir automatiquement par e-mail les nouveaux contenus publiés en ligne sur des sujets spécifiques.</li>
+              <li><strong>Tiktok</strong> : Un réseau qui permet de faire une veille informationnelle rapide, visuelle et diversifiée, notamment sur les tendances sociales, culturelles, économiques et politiques.</li>
+              <li><strong>X(Twitter)</strong> : Une mine d'informations pour suivre les innovations.</li>
               <li><strong>Youtube</strong> : Pour visionner les dernières actualités en vidéo.</li>
             </ul>
-          </div>
+
+                  <article class="project-item">
+        <img src="images/GOOGLEALERTE.png" 
+          alt="Aperçu du projet GSB" 
+          >
+        <h3>Alertes Google</h3>
+      </article>
+                </div>
         </div>
   
         <!-- Accordéon item 4 -->
@@ -377,47 +420,13 @@
           </div>
           <div class="faq-content">
             <span class="header-infos">
-              J'ai choisi d'aborder le thème de la 5G SA, une technologie en perpétuelle évolution utilisée dans de nombreux domaines.
+              J'ai choisi d'aborder le thème de l'impact intelligence artificielle sur le monde du travail.
             </span>
-            <h5>Principal problématique :</h5>
-            <h6>Quel futur de la 5G SA faut-il espérer ?</h6>
-            <p class="description">
-              Nous allons répondre à cette problématique en distinguant trois thématiques : 
-            </p>
-            <ul>
-              <li><strong>Théme 1</strong> : Qu'est-ce que la 5G SA ?</li>
-              <li><strong>Thème 2</strong> : Comment fonctionne la 5G SA ?</li>
-              <li><strong>Thème 3</strong> : Quelle est la différence entre la 5G SA et la 5G Normale ?</li>
-            </ul>
-          </div>
+            
         </div>
   
         <!-- Accordéon item 5 -->
-        <div class="faq-item">
-          <div class="faq-header">
-            <i class="bx bx-help-circle icon-help"></i>
-            <h3>Quelles sont les différentes thématiques abordées ?</h3>
-            <button class="faq-toggle" aria-label="Afficher plus">
-              <span class="arrow">▼</span>
-            </button>
-          </div>
-          <div class="faq-content">
-            <h4>"Qu'est-ce que la 5G SA ?"</h4>
-            <div class="blog-meta">
-              <p><i class="bx bx-news"></i> Aurélie</p>
-              <p><i class="bx bxs-calendar"></i> 21-09-2024</p>
-            </div>
-            <h5>Définition :</h5>
-            <p class="description">
-              La 5G SA (Stand-Alone) est une version de la 5G fonctionnant de manière indépendante, offrant des vitesses plus rapides, une latence réduite et une meilleure gestion des données.
-            </p>
-            <a class="btn" href="https://www.edcom.fr/actualites/comment-profiter-de-la-5g-sa-de-free" target="_blank">Article <i class="bx bx-link-external"></i></a>
-            <hr>
-            <a class="btn" href="/autres/veille" target="_blank">
-              Ma veille technologique en détail <i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
+        
   
       </div>
     </div>
@@ -502,6 +511,18 @@
     });
   });
 </script>
+
+
+
+<!-- Script inline pour la navbar dynamique -->
+ <script>
+    document.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar-container');
+      if (window.scrollY > 50) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    });
+  </script>
+
 
 
 </body>

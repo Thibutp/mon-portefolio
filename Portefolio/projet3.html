@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>GSB</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Test Sticky Navbar</title>
+  <style>
+    #navbar-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: #303030;
+  padding: 20px;
+  transition: background .3s, padding .3s;
+  z-index: 100;
+}
+
+#navbar-container.scrolled {
+  background: #303030;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Uniquement les liens de la navbar */
+#navbar-container nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* espace entre les liens */
+}
+
+#navbar-container nav a {
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+  <!-- Navbar et container déjà existants -->
+  <header class="navbar-only">
+  <div class="navbar-container" id="navbar-container">
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Thibut Philipkumar</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="index.html#about">Formation</a></li>
+        <li><a href="index.html#parcours">Parcours</a></li>
+        <li><a href="index.html#competence">Compétences</a></li>
+        <li><a href="index.html#veille">Veille</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        
+        <li><a href="stages.html">Stages</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="container section" id="projects">
+  <h2>Projets .NET MAUI</h2>
+  <br><br>
+  <!-- Projet 3 centré en dessous -->
+  <div class="project-single-centered">
+    <article class="project-item">
+        <img src="images/MAUI.png" alt="Aperçu du projet 3">
+      </a>
+    </article>
+  </div>
+</main>
+
+<section id="apropos" class="section">
+    <div class="container accueil-section">
+      <div class="accueil-text">
+        <h2>CONTEXTE</h2>
+        <br>
+        <p>
+          Dans le cadre de ma formation et afin de monter en compétences sur le développement mobile,
+           il m’a été demandé de réaliser une application mobile en .NET MAUI.
+            Ce projet a pour but principal de découvrir et comprendre les concepts de base de .NET MAUI,
+             en mettant en pratique la création d’une application de mon choix.
+        </p><br>
+
+        <h2>Réalisations</h2><br>
+        <p>
+          Pour ce projet, j’ai réalisé un jeu de survie à choix multiples développé avec .NET MAUI. 
+          Le principe est simple : à chaque étape, le joueur est confronté à une situation et doit faire 
+          un choix parmi plusieurs options. Seul le bon choix permet de progresser dans l’aventure ; 
+          une mauvaise décision entraîne la perte de la partie. Ce jeu a été conçu dans un objectif pédagogique afin
+           de mettre en pratique mes apprentissages en développement mobile multiplateforme tout en 
+           proposant une expérience interactive et ludique.
+        </p>
+
+        <main class="container section" id="projects">
+        <h2>Extrait de ma fiche d'Autoformation</h2>
+        <br><br>
+
+        <!-- Grille des deux premiers projets -->
+        <div class="project-single-centered">
+    <article class="project-item">
+  
+        <img src="images/Maui1.png" 
+     alt="Aperçu du projet ICGO" 
+     onclick="openLightbox('images/Maui1_1.png')">
+        <h3>Fiche AutoFormation</h3>
+      </a>
+    </article>
+  </div>
+
+
+
+
+         
+
+        
+
+
+       
+      
+        <br>
+
+        <main class="container section" id="projects">
+            <h2>Aperçu de l'application</h2>
+        
+        <br><br>
+
+        <!-- Grille des deux premiers projets -->
+        <div class="projects-grid">
+          <article class="project-item">
+               <img src="images/m2.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/m2_1.png')">
+              <h3>Page de début</h3>
+            </a>
+          </article>
+
+          <article class="project-item">
+               <img src="images/m3.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/m3_1.png')">
+              <h3>Page d'introduction</h3>
+            </a>
+          </article>
+        </div>
+
+        <!-- Projet 3 centré en dessous -->
+      <div class="project-single-centered">
+        <article class="project-item">
+          
+             <img src="images/m4.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/m4_1.png')">
+            <h3>Page du chapitre 1</h3>
+          </a>
+        </article>
+      </div>
+        </main>
+
+
+      </div>
+    </div>
+  </section>
+
+<footer><div class="container">
+      <p>&copy; 2025 Thibut Philipkumar. Tous droits réservés.</p>
+    </div></footer>
+
+    <!-- Lightbox (image zoomée) -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Zoom">
+</div>
+<script>
+  // Fonction pour ouvrir la lightbox
+  function openLightbox(src) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    
+    // Met à jour la source de l’image
+    lightboxImg.src = src;
+
+    // Supprime et ré-applique l’animation pour qu’elle rejoue à chaque ouverture
+    lightboxImg.classList.remove("zoom");
+    void lightboxImg.offsetWidth; // force le reflow
+    lightboxImg.classList.add("zoom");
+
+    // Affiche la lightbox
+    lightbox.style.display = "flex";
+  }
+
+  // Fonction pour fermer la lightbox
+  function closeLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  lightbox.style.display = "none";
+  lightboxImg.classList.remove("zoom"); // Nettoyage animation
+}
+
+</script>
+
+
+</body>
+</html

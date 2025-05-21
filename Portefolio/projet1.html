@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>GSB</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Test Sticky Navbar</title>
+  <style>
+    #navbar-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: #303030;
+  padding: 20px;
+  transition: background .3s, padding .3s;
+  z-index: 100;
+}
+
+#navbar-container.scrolled {
+  background: #303030;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Uniquement les liens de la navbar */
+#navbar-container nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* espace entre les liens */
+}
+
+#navbar-container nav a {
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+  <!-- Navbar et container déjà existants -->
+  <header class="navbar-only">
+  <div class="navbar-container" id="navbar-container">
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Thibut Philipkumar</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="index.html#about">Formation</a></li>
+        <li><a href="index.html#parcours">Parcours</a></li>
+        <li><a href="index.html#competence">Compétences</a></li>
+        <li><a href="index.html#veille">Veille</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        
+        <li><a href="stages.html">Stages</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="container section" id="projects">
+  <h2>Projets GSB-AppliFrais</h2>
+  <br><br>
+  <!-- Projet 3 centré en dessous -->
+  <div class="project-single-centered">
+    <article class="project-item">
+        <img src="images/gsbbB.png" alt="Aperçu du projet 3">
+      </a>
+    </article>
+  </div>
+</main>
+
+<section id="apropos" class="section">
+    <div class="container accueil-section">
+      <div class="accueil-text">
+        <h2>CONTEXTE</h2>
+        <br>
+        <p>
+          GSB Laboratoire pharmaceutique fictif issu de la fusion des entreprises Galaxy et Swiss Bourdin. Dans cette
+entreprise les visiteurs médicaux se déplacent chez des praticiens pour leur parler de leurs produits et leur
+proposer des échantillons afin de promouvoir le laboratoire. Ainsi l’entreprise aimerait généraliser la politique de
+remboursement des frais de visite de ses visiteurs médicaux.
+        </p><br>
+
+        <h2>Réalisations</h2><br>
+        <p>
+          L'application Web GSB-AppliFrais est développée en PHP en utilisant la Programmation Orientée Objet (POO)
+et suit l'architecture MVC (Modèle-Vue-Contrôleur). Elle repose sur une base de données relationnelle. Son
+objectif est gérer les frais de déplacement : elle permet aux visiteurs médicaux de saisir et suivre leurs
+dépenses, tandis que les comptables peuvent vérifier, ajuster et valider ces fiches avant d'effectuer les
+paiements. En s'appuyant sur une version existante qui était déjà fonctionnelle pour les visiteurs, nous avons
+pris en charge le développement de la partie comptable. Cela a inclus l'ajout d'une nouvelle table dédiée dans
+la base de données, ainsi que la création des modèles, contrôleurs et vues nécessaires pour établir les fiches
+de frais (composées de frais forfaitaires ou hors forfait), vérifier les justificatifs et le kilométrage, effectuer des
+corrections manuelles si nécessaire, valider les éléments comptables, et automatiser la génération des fichiers
+de paiement mensuels.
+        </p>
+
+        <main class="container section" id="projects">
+        <h2>Aperçu de l'application</h2>
+        <br><br>
+
+        <!-- Grille des deux premiers projets -->
+        <div class="projects-grid">
+          <article class="project-item">
+  <img src="images/Archigsb.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/ARCHIGSBHD.png')">
+  <h3>Architecture</h3>
+</article>
+
+
+          <article class="project-item">
+              <img src="images/BDD-GSB-Frais.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/BDD-GSB-FraisHD.png')">
+              <h3>Schéma modèle physique de la base de données</h3>
+            </a>
+          </article>
+        </div>
+        </main>
+
+        
+
+
+       
+      
+        <br>
+
+        <main class="container section" id="projects">
+        
+        <br><br>
+
+        <!-- Grille des deux premiers projets -->
+        <div class="projects-grid">
+          <article class="project-item">
+              <img src="images/COGSB.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/COGSB_1.png')">
+              <h3>Page de connexion</h3>
+            </a>
+          </article>
+
+          <article class="project-item">
+              <img src="images/ACCGSB.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/ACCGSB_1.png')">
+              <h3>Page d'accueil</h3>
+            </a>
+          </article>
+        </div>
+
+        <!-- Projet 3 centré en dessous -->
+      <div class="project-single-centered">
+        <article class="project-item">
+          
+            <img src="images/FFGSB.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/FFGSB_1.png')">
+            <h3>En savoir plus</h3>
+          </a>
+        </article>
+      </div>
+        </main>
+
+
+      </div>
+    </div>
+  </section>
+
+<footer><div class="container">
+      <p>&copy; 2025 Thibut Philipkumar. Tous droits réservés.</p>
+    </div></footer>
+
+    <!-- Lightbox (image zoomée) -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Zoom">
+</div>
+<script>
+  // Fonction pour ouvrir la lightbox
+  function openLightbox(src) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    
+    // Met à jour la source de l’image
+    lightboxImg.src = src;
+
+    // Supprime et ré-applique l’animation pour qu’elle rejoue à chaque ouverture
+    lightboxImg.classList.remove("zoom");
+    void lightboxImg.offsetWidth; // force le reflow
+    lightboxImg.classList.add("zoom");
+
+    // Affiche la lightbox
+    lightbox.style.display = "flex";
+  }
+
+  // Fonction pour fermer la lightbox
+  function closeLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  lightbox.style.display = "none";
+  lightboxImg.classList.remove("zoom"); // Nettoyage animation
+}
+
+</script>
+
+
+</body>
+</html

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>GSB</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Test Sticky Navbar</title>
+  <style>
+    #navbar-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: #303030;
+  padding: 20px;
+  transition: background .3s, padding .3s;
+  z-index: 100;
+}
+
+#navbar-container.scrolled {
+  background: #303030;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Uniquement les liens de la navbar */
+#navbar-container nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* espace entre les liens */
+}
+
+#navbar-container nav a {
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+  <!-- Navbar et container déjà existants -->
+  <header class="navbar-only">
+  <div class="navbar-container" id="navbar-container">
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Thibut Philipkumar</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="index.html#about">Formation</a></li>
+        <li><a href="index.html#parcours">Parcours</a></li>
+        <li><a href="index.html#competence">Compétences</a></li>
+        <li><a href="index.html#veille">Veille</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        
+        <li><a href="stages.html">Stages</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="container section" id="projects">
+  <h2>Projets GSB-AppliFrais</h2>
+  <br><br>
+  <!-- Projet 3 centré en dessous -->
+  <div class="project-single-centered">
+    <article class="project-item">
+        <img src="images/beemaccc.png" alt="Aperçu du projet 3">
+      </a>
+    </article>
+  </div>
+</main>
+
+<section id="apropos" class="section">
+    <div class="container accueil-section">
+      <div class="accueil-text">
+        <h2>Présentation de l'entreprise</h2>
+        <br>
+        <p>
+          BeeMac est une micro-entreprise fondée en 2020, spécialisée dans le reconditionnement d'ordinateurs Mac et d'autres appareils électroniques.
+           Son principal objectif est de donner une seconde vie aux équipements électroniques qui seraient autrement jetés ou recyclés.
+            Le marché du reconditionnement s'inscrit dans une logique d'économie circulaire, une tendance en pleine croissance
+             dans le contexte actuel de sensibilisation écologique.
+        </p><br>
+
+        <h2>Réalisations</h2><br>
+        <p>
+          Lors de mon stage d’une durée d’un mois en juin 2024, j’ai participé au reconditionnement d’appareils Mac.
+           Cette mission consistait à diagnostiquer les défauts matériels des ordinateurs en utilisant des outils spécialisés
+            comme TechTool Pro et CoconutBattery, afin d’identifier les composants à réparer ou remplacer. En parallèle,
+             j’ai également contribué à l’amélioration de l’ergonomie d’un site internet. Pour cela, j’ai utilisé WordPress avec
+              les extensions Kubio et WooCommerce, en proposant une nouvelle organisation de l’interface afin d’optimiser la navigation
+               et l’expérience utilisateur.
+        </p>
+
+        <main class="container section" id="projects">
+        <h2>Logiciel de reconditionnement</h2>
+        <br><br>
+
+        <!-- Grille des deux premiers projets -->
+        <div class="projects-grid">
+          <article class="project-item">
+  <img src="images/coco.jpg" 
+     alt="Aperçu du projet GSB" 
+     >
+  <h3>CoconutBattery</h3>
+</article>
+
+
+          <article class="project-item">
+              <img src="images/techtools.png" 
+     alt="Aperçu du projet GSB" 
+    >
+              <h3>TechTools</h3>
+            </a>
+          </article>
+        </div>
+        </main>
+
+        
+
+
+       
+      
+        <br>
+
+        <main class="container section" id="projects">
+        <h2>Aperçu du site</h2>
+        <br><br>
+
+        <!-- Grille des deux premiers projets -->
+        <div class="projects-grid">
+          <article class="project-item">
+              <img src="images/cahier.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/cahier_1.png')">
+              <h3>Cahier des charge</h3>
+            </a>
+          </article>
+
+          <article class="project-item">
+              <img src="images/accueilBeemac.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/accueilBeemac_1.png')">
+              <h3>Page d'accueil</h3>
+            </a>
+          </article>
+        </div>
+
+        <!-- Projet 3 centré en dessous -->
+      <div class="project-single-centered">
+        <article class="project-item">
+          
+            <img src="images/page2.png" 
+     alt="Aperçu du projet GSB" 
+     onclick="openLightbox('images/page2_1.png')">
+            <h3>Page d'ordinateur</h3>
+          </a>
+        </article>
+      </div>
+        </main>
+
+
+      </div>
+    </div>
+  </section>
+
+<footer><div class="container">
+      <p>&copy; 2025 Thibut Philipkumar. Tous droits réservés.</p>
+    </div></footer>
+
+    <!-- Lightbox (image zoomée) -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Zoom">
+</div>
+<script>
+  // Fonction pour ouvrir la lightbox
+  function openLightbox(src) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    
+    // Met à jour la source de l’image
+    lightboxImg.src = src;
+
+    // Supprime et ré-applique l’animation pour qu’elle rejoue à chaque ouverture
+    lightboxImg.classList.remove("zoom");
+    void lightboxImg.offsetWidth; // force le reflow
+    lightboxImg.classList.add("zoom");
+
+    // Affiche la lightbox
+    lightbox.style.display = "flex";
+  }
+
+  // Fonction pour fermer la lightbox
+  function closeLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  lightbox.style.display = "none";
+  lightboxImg.classList.remove("zoom"); // Nettoyage animation
+}
+
+</script>
+
+
+</body>
+</html
